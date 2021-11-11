@@ -40,7 +40,7 @@
    <center>
       <HBox prefHeight="100.0" prefWidth="200.0" BorderPane.alignment="CENTER">
          <children>
-            <ListView prefHeight="299.0" prefWidth="585.0" />
+            <ListView fx:id="lista" editable="true" prefHeight="299.0" prefWidth="585.0" />
             <ScrollBar orientation="VERTICAL" />
          </children>
       </HBox>
