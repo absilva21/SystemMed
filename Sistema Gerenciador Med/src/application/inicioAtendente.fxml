@@ -7,9 +7,9 @@
 
 <AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="800.0" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.InicioAtendenteController">
    <children>
-      <Button layoutX="50.0" layoutY="30.0" mnemonicParsing="false" prefHeight="55.0" prefWidth="48.0">
+      <Button layoutX="50.0" layoutY="30.0" mnemonicParsing="false" prefHeight="55.0" prefWidth="48.0" onAction="medicos">
          <graphic>
-            <ImageView fitHeight="62.0" fitWidth="61.0" pickOnBounds="true" preserveRatio="true">
+            <ImageView fitHeight="62.0" fitWidth="61.0" pickOnBounds="true" preserveRatio="true" >
                <image>
                   <Image url="@../../icons/signofhealth_medical_10742.png" />
                </image>

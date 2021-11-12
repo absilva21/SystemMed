@@ -25,4 +25,9 @@ public class InicioAtendenteController {
     	Main.aux.setScene(sceneform);
 	}
 	
+	@FXML
+	void medicos(ActionEvent event)throws IOException{
+		
+	}
+	
 }
