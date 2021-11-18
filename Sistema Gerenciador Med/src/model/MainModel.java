@@ -22,5 +22,9 @@ public class MainModel {
 	public void setSessao(Sessao sessao) {
 		this.sessao = sessao;
 	}
+	
+	public void cadastrarMedico(Medico m) {
+		medicos.add(m);
+	}
 
 }
