@@ -9,7 +9,7 @@
 <?import javafx.scene.layout.BorderPane?>
 <?import javafx.scene.layout.HBox?>
 
-<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.ListaProntuariosController">
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.ListaMedicoController">
    <top>
       <HBox prefHeight="20.0" prefWidth="307.0" BorderPane.alignment="CENTER">
          <children>
@@ -25,7 +25,7 @@
                <children>
                   <Button layoutX="436.0" layoutY="1.0" mnemonicParsing="false">
                      <graphic>
-                        <ImageView fitHeight="50.0" fitWidth="49.0" pickOnBounds="true" preserveRatio="true">
+                        <ImageView fx:id="cadastro" fitHeight="50.0" fitWidth="49.0" onDragDetected="#cadastro" pickOnBounds="true" preserveRatio="true">
                            <image>
                               <Image url="@../../icons/addfileinterfacesymbolofpapersheetwithtextlinesandplussign_79821.png" />
                            </image>
