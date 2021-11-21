@@ -8,6 +8,12 @@ public class Medico extends Pessoa{
 	Especialidade subEspecialidade;
 	String senha;
 	
+	@Override
+	public
+	String toString(){
+		return "DR(a)."+super.getName()+" "+super.getSobrenome();
+	}
+	
 	public String getRegistro() {
 		return registro;
 	}
