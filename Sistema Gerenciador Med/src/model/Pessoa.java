@@ -7,6 +7,10 @@ public class Pessoa {
 	String rg;
 	Endereco endereco;
 	
+	public Pessoa() {
+		endereco = new Endereco();
+	}
+	
 	public String getName() {
 		return name;
 	}

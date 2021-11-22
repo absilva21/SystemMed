@@ -4,6 +4,13 @@ public class MainModel {
 	LinkList<Medico> medicos;
 	LinkList<Especialidade> especialidades;
 	Sessao sessao;
+	
+	public MainModel() {
+		medicos = new LinkList<Medico>();
+		especialidades = new LinkList<Especialidade>();
+		
+	}
+	
 	public LinkList<Medico> getMedicos() {
 		return medicos;
 	}

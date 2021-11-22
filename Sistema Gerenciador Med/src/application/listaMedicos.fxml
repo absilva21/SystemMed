@@ -13,7 +13,7 @@
    <top>
       <HBox prefHeight="20.0" prefWidth="307.0" BorderPane.alignment="CENTER">
          <children>
-            <Button fx:id="voltarHome" mnemonicParsing="false" onAction="#voltarHome">
+            <Button mnemonicParsing="false" onAction="#voltarHome">
                <graphic>
                   <ImageView fitHeight="49.0" fitWidth="74.0" pickOnBounds="true" preserveRatio="true">
                      <image>
@@ -23,9 +23,9 @@
                </graphic></Button>
             <AnchorPane prefHeight="57.0" prefWidth="534.0">
                <children>
-                  <Button layoutX="436.0" layoutY="1.0" mnemonicParsing="false">
+                  <Button layoutX="436.0" layoutY="1.0" mnemonicParsing="false" onAction="#cadastro">
                      <graphic>
-                        <ImageView fx:id="cadastro" fitHeight="50.0" fitWidth="49.0" onDragDetected="#cadastro" pickOnBounds="true" preserveRatio="true">
+                        <ImageView  fitHeight="50.0" fitWidth="49.0" pickOnBounds="true" preserveRatio="true">
                            <image>
                               <Image url="@../../icons/addfileinterfacesymbolofpapersheetwithtextlinesandplussign_79821.png" />
                            </image>

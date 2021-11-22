@@ -8,6 +8,9 @@ public class Medico extends Pessoa{
 	Especialidade subEspecialidade;
 	String senha;
 	
+	public Medico() {
+		super();
+	}
 	@Override
 	public
 	String toString(){
@@ -62,7 +65,5 @@ public class Medico extends Pessoa{
 		this.senha = senha;
 	}
 
-	public Medico() {
-		super();
-	}
+	
 }

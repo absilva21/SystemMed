@@ -21,7 +21,7 @@
       <Label layoutX="32.0" layoutY="70.0" text="nome: " />
       <TextField fx:id="name" layoutX="78.0" layoutY="66.0" />
       <Label layoutX="266.0" layoutY="70.0" text="sobrenome:" />
-      <TextField fx:id="sobrename" layoutX="344.0" layoutY="66.0" />
+      <TextField fx:id="sobreName" layoutX="344.0" layoutY="66.0" />
       <Label layoutX="41.0" layoutY="108.0" text="CPF:" />
       <TextField fx:id="cpf" layoutX="78.0" layoutY="104.0" />
       <Label layoutX="266.0" layoutY="100.0" text="RG:" />
@@ -42,16 +42,16 @@
       <ComboBox fx:id="esta" layoutX="333.0" layoutY="239.0" prefHeight="24.0" prefWidth="24.0" />
       <Label layoutX="400.0" layoutY="243.0" text="CEP:" />
       <TextField fx:id="cep" layoutX="440.0" layoutY="239.0" />
-      <Button layoutX="623.0" layoutY="441.0" mnemonicParsing="false" >
+      <Button layoutX="623.0" layoutY="441.0" mnemonicParsing="false" onAction="#save">
          <graphic>
-            <ImageView fitHeight="54.0" fitWidth="54.0" pickOnBounds="true" preserveRatio="true" onAction="#save">
+            <ImageView fitHeight="54.0" fitWidth="54.0" pickOnBounds="true" preserveRatio="true">
                <image>
                   <Image url="@../../icons/savedisk_121993.png" />
                </image>
             </ImageView>
          </graphic>
       </Button>
-      <Button layoutX="10.0" layoutY="14.0" mnemonicParsing="false" onAction="#voltarlista">
+      <Button layoutX="10.0" layoutY="14.0" mnemonicParsing="false" onAction="#voltarLista">
          <graphic>
             <ImageView fitHeight="30.0" fitWidth="33.0" pickOnBounds="true" preserveRatio="true">
                <image>

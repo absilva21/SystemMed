@@ -2,6 +2,7 @@ package application;
 	
 import javafx.application.Application;
 import javafx.stage.Stage;
+import model.MainModel;
 import javafx.scene.Scene;
 import javafx.scene.layout.AnchorPane;
 import javafx.scene.layout.VBox;
@@ -11,9 +12,13 @@ import javafx.fxml.FXMLLoader;
 public class Main extends Application {
 	static Stage aux;
 	static Stage atm;
+	static MainModel main;
 	@Override
 	public void start(Stage primaryStage) {
+	
 		Stage a = new Stage();
+		MainModel m = new MainModel();
+		main = m;
 		atm = a;
 		aux = primaryStage;
 		try {
