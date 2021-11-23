@@ -3,8 +3,7 @@
 <?import javafx.scene.control.Button?>
 <?import javafx.scene.control.ComboBox?>
 <?import javafx.scene.control.Label?>
-<?import javafx.scene.control.MenuButton?>
-<?import javafx.scene.control.MenuItem?>
+<?import javafx.scene.control.PasswordField?>
 <?import javafx.scene.control.TextField?>
 <?import javafx.scene.image.Image?>
 <?import javafx.scene.image.ImageView?>
@@ -39,9 +38,9 @@
       <Label layoutX="34.0" layoutY="243.0" text="cidade:" />
       <TextField fx:id="city" layoutX="89.0" layoutY="239.0" />
       <Label layoutX="272.0" layoutY="243.0" text="estado:" />
-      <ComboBox fx:id="esta" layoutX="333.0" layoutY="239.0" prefHeight="24.0" prefWidth="24.0" />
-      <Label layoutX="400.0" layoutY="243.0" text="CEP:" />
-      <TextField fx:id="cep" layoutX="440.0" layoutY="239.0" />
+      <ComboBox fx:id="esta" layoutX="333.0" layoutY="239.0" onAction="#mostrar" prefHeight="31.0" prefWidth="113.0" promptText="selecione" />
+      <Label layoutX="469.0" layoutY="247.0" text="CEP:" />
+      <TextField fx:id="cep" layoutX="515.0" layoutY="239.0" />
       <Button layoutX="623.0" layoutY="441.0" mnemonicParsing="false" onAction="#save">
          <graphic>
             <ImageView fitHeight="54.0" fitWidth="54.0" pickOnBounds="true" preserveRatio="true">
@@ -55,12 +54,14 @@
          <graphic>
             <ImageView fitHeight="30.0" fitWidth="33.0" pickOnBounds="true" preserveRatio="true">
                <image>
-                  <Image url="@../icons/back_arrow_5821.png" />
+                  <Image url="@../../icons/back_arrow_5821.png" />
                </image>
             </ImageView>
          </graphic>
       </Button>
       <Label layoutX="34.0" layoutY="301.0" text="CRM:" />
       <TextField fx:id="crm" layoutX="79.0" layoutY="297.0" />
+      <Label layoutX="272.0" layoutY="301.0" text="senha:" />
+      <PasswordField fx:id="pass" layoutX="333.0" layoutY="297.0" />
    </children>
 </AnchorPane>
