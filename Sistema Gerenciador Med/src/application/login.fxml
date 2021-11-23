@@ -54,15 +54,16 @@
                   <Font size="14.0" />
                </font>
             </Label>
-            <TextField layoutX="326.0" layoutY="195.0" />
+            <TextField fx:id="cpf" layoutX="326.0" layoutY="195.0" />
             <Label layoutX="266.0" layoutY="241.0" text="senha:">
                <font>
                   <Font size="14.0" />
                </font>
             </Label>
-            <PasswordField layoutX="326.0" layoutY="238.0" />
+            <PasswordField fx:id="pass" layoutX="326.0" layoutY="238.0" />
             <Button fx:id="entrar" layoutX="438.0" layoutY="288.0" mnemonicParsing="false" onAction="#onActionEntrar" text="Entrar" />
             <Button fx:id="primaryAcess" layoutX="285.0" layoutY="288.0" mnemonicParsing="false" onAction="#onActionPrimary" text="Primeiro acesso" />
+            <Label fx:id="erro" layoutX="339.0" layoutY="328.0" text="erro na autenticação" textFill="#c31717" visible="false" />
          </children>
     </AnchorPane>
   </children>

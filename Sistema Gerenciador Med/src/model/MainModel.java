@@ -4,10 +4,14 @@ public class MainModel {
 	LinkList<Medico> medicos;
 	LinkList<Especialidade> especialidades;
 	Sessao sessao;
+	Administrador admin;
 	
 	public MainModel() {
 		medicos = new LinkList<Medico>();
 		especialidades = new LinkList<Especialidade>();
+		admin = new Administrador();
+		admin.setSenha("admin");
+		admin.setLogin("admin");
 		
 	}
 	
@@ -32,6 +36,14 @@ public class MainModel {
 	
 	public void cadastrarMedico(Medico m) {
 		medicos.add(m);
+	}
+	
+	public boolean autenticar(String cpf, String senha) {
+		if(cpf.equals(admin.getLogin())&&senha.equals(admin.getSenha())){
+			return true;
+		}else {
+			return false;
+		}
 	}
 
 }
