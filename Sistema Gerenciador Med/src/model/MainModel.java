@@ -1,11 +1,30 @@
 package model;
 
+import java.util.HashMap;
+
 public class MainModel {
 	LinkList<Medico> medicos;
 	LinkList<Especialidade> especialidades;
 	Sessao sessao;
 	Administrador admin;
+	HashMap<String,Pessoa> usuario;
 	
+	public Administrador getAdmin() {
+		return admin;
+	}
+
+	public void setAdmin(Administrador admin) {
+		this.admin = admin;
+	}
+
+	public HashMap<String, Pessoa> getUsuario() {
+		return usuario;
+	}
+
+	public void setUsuario(HashMap<String, Pessoa> usuario) {
+		this.usuario = usuario;
+	}
+
 	public MainModel() {
 		medicos = new LinkList<Medico>();
 		especialidades = new LinkList<Especialidade>();
