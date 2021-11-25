@@ -7,6 +7,7 @@ public class Sessao {
 	static final int MEDICO = 0;
 	static final int ATENDENTE = 1;
 	static final int PACIENTE = -1;
+	static final int ADM = 2;
 
 	public int getTypeUser() {
 		return typeUser;

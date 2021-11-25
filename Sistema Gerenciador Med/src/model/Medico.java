@@ -8,6 +8,12 @@ public class Medico extends Pessoa{
 	Especialidade subEspecialidade;
 	String senha;
 	
+	public String getSenha() {
+		return senha;
+	}
+	public void setSenha(String senha) {
+		this.senha = senha;
+	}
 	public Medico() {
 		super();
 	}
@@ -57,13 +63,7 @@ public class Medico extends Pessoa{
 		this.subEspecialidade = subEspecialidade;
 	}
 
-	public String getSenha() {
-		return senha;
-	}
 
-	public void setSenha(String senha) {
-		this.senha = senha;
-	}
 
 	
 }

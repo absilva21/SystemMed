@@ -7,7 +7,7 @@ public class MainModel {
 	LinkList<Especialidade> especialidades;
 	Sessao sessao;
 	Administrador admin;
-	HashMap<String,Pessoa> usuario;
+	HashMap<String,Pessoa> usuarios;
 	
 	public Administrador getAdmin() {
 		return admin;
@@ -18,11 +18,11 @@ public class MainModel {
 	}
 
 	public HashMap<String, Pessoa> getUsuario() {
-		return usuario;
+		return usuarios;
 	}
 
 	public void setUsuario(HashMap<String, Pessoa> usuario) {
-		this.usuario = usuario;
+		this.usuarios = usuario;
 	}
 
 	public MainModel() {
@@ -58,11 +58,32 @@ public class MainModel {
 	}
 	
 	public boolean autenticar(String cpf, String senha) {
+		boolean auth = false;
 		if(cpf.equals(admin.getLogin())&&senha.equals(admin.getSenha())){
-			return true;
+			auth = true;
+			sessao = new Sessao();
+			this.sessao.setName("admin");
+			this.sessao.setTypeUser(Sessao.ADM);
+		}else if(usuarios.containsKey(cpf)) {
+			Pessoa user = usuarios.get(cpf);
+			if(user instanceof Medico) {
+				Medico x = (Medico) user;
+				auth = senha.equals(x.getSenha());
+				this.sessao.setName(user.name);
+				this.sessao.setTypeUser(Sessao.MEDICO);
+			}else if(user instanceof Atendente) {
+				Atendente x = (Atendente) user;
+				auth = senha.equals(x.getSenha());
+				this.sessao.setName(user.name);
+				this.sessao.setTypeUser(Sessao.ATENDENTE);
+			}else {
+				//autenticação do Paciente no auto Atendimento
+			}
 		}else {
-			return false;
+			auth = false;
 		}
+		
+		return auth;
 	}
 
 }
