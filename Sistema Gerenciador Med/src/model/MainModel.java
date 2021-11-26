@@ -58,6 +58,10 @@ public class MainModel {
 		medicos.add(m);
 	}
 	
+	public boolean BuscarUser(String cpf) {
+		return usuarios.containsKey(cpf);
+	}
+	
 	public boolean autenticar(String cpf, String senha) {
 		boolean auth = false;
 		if(cpf.equals(admin.getLogin())&&senha.equals(admin.getSenha())){

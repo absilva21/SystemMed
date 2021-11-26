@@ -1,20 +1,22 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
+<?import javafx.scene.control.Button?>
 <?import javafx.scene.control.Label?>
 <?import javafx.scene.control.TextField?>
 <?import javafx.scene.layout.AnchorPane?>
 <?import javafx.scene.text.Font?>
 
-
-<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1">
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="800.0" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.PrimaryPassController">
    <children>
-      <Label layoutX="213.0" layoutY="39.0" text="Primeiro acesso">
+      <Label layoutX="301.0" layoutY="36.0" text="Primeiro acesso">
          <font>
             <Font name="System Bold" size="16.0" />
          </font>
       </Label>
-      <TextField layoutX="215.0" layoutY="101.0" />
-      <Label layoutX="162.0" layoutY="105.0" text="Senha:" />
-      <Label layoutX="242.0" layoutY="145.0" text="Label" />
+      <TextField fx:id="pass" layoutX="288.0" layoutY="130.0" />
+      <Label layoutX="222.0" layoutY="134.0" text="Senha:" />
+      <Label layoutX="229.0" layoutY="170.0" prefHeight="16.0" prefWidth="289.0" text="digite uma senha de 6 digitos ou caracteres" />
+      <Label fx:id="erro" layoutX="281.0" layoutY="263.0" prefHeight="9.0" prefWidth="157.0" text="digite uma senha válida" textFill="#e10808" />
+      <Button layoutX="343.0" layoutY="223.0" mnemonicParsing="false" text="salvar" onAction="#salvar" />
    </children>
 </AnchorPane>

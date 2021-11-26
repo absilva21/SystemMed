@@ -82,6 +82,7 @@ public class FormMedicosController {
 		n.getEndereco().setEstado(esta.getValue());
 		n.getEndereco().setCep(cep.getText());
 		n.setRegistro(crm.getText());
+		Main.main.getUsuario().put(cpf.getText(), n);
 	
 		Main.main.getMedicos().add(n);
 		BorderPane form = (BorderPane)FXMLLoader.load(getClass().getResource("listaMedicos.fxml"));

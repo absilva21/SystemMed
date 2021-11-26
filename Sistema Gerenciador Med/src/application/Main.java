@@ -3,6 +3,7 @@ package application;
 import javafx.application.Application;
 import javafx.stage.Stage;
 import model.MainModel;
+import model.Pessoa;
 import javafx.scene.Scene;
 import javafx.scene.layout.AnchorPane;
 import javafx.scene.layout.VBox;
@@ -13,6 +14,8 @@ public class Main extends Application {
 	static Stage aux;
 	static Stage atm;
 	static MainModel main;
+	static Pessoa refPessoa;
+	
 	@Override
 	public void start(Stage primaryStage) {
 	
