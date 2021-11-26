@@ -26,6 +26,7 @@ public class MainModel {
 	}
 
 	public MainModel() {
+		usuarios = new HashMap<String,Pessoa>();
 		medicos = new LinkList<Medico>();
 		especialidades = new LinkList<Especialidade>();
 		admin = new Administrador();

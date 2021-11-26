@@ -7,9 +7,9 @@
 
 <AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="800.0" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.InicioAtendenteController">
    <children>
-      <Button layoutX="50.0" layoutY="30.0" mnemonicParsing="false" prefHeight="55.0" prefWidth="48.0" onAction="#medicos">
+      <Button fx:id="med" layoutX="50.0" layoutY="30.0" mnemonicParsing="false" onAction="#medicos" prefHeight="55.0" prefWidth="48.0">
          <graphic>
-            <ImageView fitHeight="62.0" fitWidth="61.0" pickOnBounds="true" preserveRatio="true" >
+            <ImageView fitHeight="62.0" fitWidth="61.0" pickOnBounds="true" preserveRatio="true">
                <image>
                   <Image url="@../../icons/signofhealth_medical_10742.png" />
                </image>
@@ -30,6 +30,15 @@
             <ImageView fitHeight="40.0" fitWidth="35.0" pickOnBounds="true" preserveRatio="true">
                <image>
                   <Image url="@../../icons/4115235-exit-logout-sign-out_114030.png" />
+               </image>
+            </ImageView>
+         </graphic>
+      </Button>
+      <Button fx:id="addAten" layoutX="259.0" layoutY="25.0" mnemonicParsing="false" prefHeight="70.0" prefWidth="80.0">
+         <graphic>
+            <ImageView fitHeight="75.0" fitWidth="73.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../icons/gui_operator_icon_157620.png" />
                </image>
             </ImageView>
          </graphic>

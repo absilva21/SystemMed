@@ -38,9 +38,19 @@ public class SampleController {
 	void onActionEntrar(ActionEvent event) throws IOException{
 		boolean vali = Main.main.autenticar(cpf.getText(), pass.getText());
 		if(vali) {
-			AnchorPane form = (AnchorPane)FXMLLoader.load(getClass().getResource("inicioAtendente.fxml"));
-			Scene sceneform = new Scene(form,800,600);
-	    	Main.aux.setScene(sceneform);
+			int n = Main.main.getSessao().getTypeUser();
+			switch(n) {
+			case 1:
+				
+				AnchorPane form = (AnchorPane)FXMLLoader.load(getClass().getResource("inicioAtendente.fxml"));
+				Scene sceneform = new Scene(form,800,600);
+		    	Main.aux.setScene(sceneform);
+			case 2:
+				AnchorPane root = (AnchorPane)FXMLLoader.load(getClass().getResource("inicioAtendente.fxml"));
+				Scene sceneroot = new Scene(root,800,600);
+		    	Main.aux.setScene(sceneroot);
+			}
+			
 		}else {
 			erro.setVisible(true);
 		}
