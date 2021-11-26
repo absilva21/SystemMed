@@ -41,20 +41,23 @@ public class SampleController {
 			int n = Main.main.getSessao().getTypeUser();
 			switch(n) {
 			case 0:
-				
-				AnchorPane med = (AnchorPane)FXMLLoader.load(getClass().getResource("ListaProntuarios.fxml"));
+				System.out.println("entrou");
+				BorderPane med = (BorderPane)FXMLLoader.load(getClass().getResource("listaProntuarios.fxml"));
 				Scene scenemed = new Scene(med,800,600);
 		    	Main.aux.setScene(scenemed);
+		    	break;
 			
 			case 1:
 				
 				AnchorPane form = (AnchorPane)FXMLLoader.load(getClass().getResource("inicioAtendente.fxml"));
 				Scene sceneform = new Scene(form,800,600);
 		    	Main.aux.setScene(sceneform);
+		    	break;
 			case 2:
 				AnchorPane root = (AnchorPane)FXMLLoader.load(getClass().getResource("inicioAtendente.fxml"));
 				Scene sceneroot = new Scene(root,800,600);
 		    	Main.aux.setScene(sceneroot);
+		    	break;
 			}
 			
 		}else {
