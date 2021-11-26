@@ -42,7 +42,7 @@ public class SampleController {
 			switch(n) {
 			case 0:
 				
-				AnchorPane med = (AnchorPane)FXMLLoader.load(getClass().getResource("inicioAtendente.fxml"));
+				AnchorPane med = (AnchorPane)FXMLLoader.load(getClass().getResource("ListaProntuarios.fxml"));
 				Scene scenemed = new Scene(med,800,600);
 		    	Main.aux.setScene(scenemed);
 			

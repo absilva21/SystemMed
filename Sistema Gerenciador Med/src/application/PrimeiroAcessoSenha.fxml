@@ -16,7 +16,7 @@
       <TextField fx:id="pass" layoutX="288.0" layoutY="130.0" />
       <Label layoutX="222.0" layoutY="134.0" text="Senha:" />
       <Label layoutX="229.0" layoutY="170.0" prefHeight="16.0" prefWidth="289.0" text="digite uma senha de 6 digitos ou caracteres" />
-      <Label fx:id="erro" layoutX="281.0" layoutY="263.0" prefHeight="9.0" prefWidth="157.0" text="digite uma senha válida" textFill="#e10808" />
-      <Button layoutX="343.0" layoutY="223.0" mnemonicParsing="false" text="salvar" onAction="#salvar" />
+      <Label fx:id="erro" layoutX="281.0" layoutY="263.0" prefHeight="9.0" prefWidth="157.0" text="digite uma senha válida" textFill="#e10808" visible="false" />
+      <Button layoutX="343.0" layoutY="223.0" mnemonicParsing="false" onAction="#salvar" text="salvar" />
    </children>
 </AnchorPane>
