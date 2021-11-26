@@ -40,6 +40,12 @@ public class SampleController {
 		if(vali) {
 			int n = Main.main.getSessao().getTypeUser();
 			switch(n) {
+			case 0:
+				
+				AnchorPane med = (AnchorPane)FXMLLoader.load(getClass().getResource("inicioAtendente.fxml"));
+				Scene scenemed = new Scene(med,800,600);
+		    	Main.aux.setScene(scenemed);
+			
 			case 1:
 				
 				AnchorPane form = (AnchorPane)FXMLLoader.load(getClass().getResource("inicioAtendente.fxml"));

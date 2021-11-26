@@ -50,9 +50,7 @@ public class FormMedicosController {
 	
 	@FXML
 	TextField crm;
-	
-	@FXML
-	PasswordField pass;
+
 	
 	@FXML
 	private void initialize() {
@@ -84,7 +82,7 @@ public class FormMedicosController {
 		n.getEndereco().setEstado(esta.getValue());
 		n.getEndereco().setCep(cep.getText());
 		n.setRegistro(crm.getText());
-		n.setSenha(pass.getText());
+	
 		Main.main.getMedicos().add(n);
 		BorderPane form = (BorderPane)FXMLLoader.load(getClass().getResource("listaMedicos.fxml"));
 		Scene sceneform = new Scene(form,800,600);
