@@ -6,7 +6,16 @@ public class Pessoa {
 	String cpf;
 	String rg;
 	Endereco endereco;
+	String telefone;
 	
+	public String getTelefone() {
+		return telefone;
+	}
+
+	public void setTelefone(String telefone) {
+		this.telefone = telefone;
+	}
+
 	public Pessoa() {
 		endereco = new Endereco();
 	}

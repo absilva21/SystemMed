@@ -9,7 +9,7 @@
 <?import javafx.scene.layout.AnchorPane?>
 <?import javafx.scene.text.Font?>
 
-<AnchorPane prefHeight="517.0" prefWidth="709.0" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.FormMedicosController">
+<AnchorPane prefHeight="600.0" prefWidth="800.0" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.FormMedicosController">
    <children>
       <Label layoutX="210.0" prefHeight="64.0" prefWidth="208.0" text="Novo Médico">
          <font>
@@ -25,22 +25,22 @@
       <Label layoutX="266.0" layoutY="100.0" text="RG:" />
       <TextField fx:id="rg" layoutX="298.0" layoutY="96.0" />
   
-      <Label layoutX="247.0" layoutY="171.0" text="nome do longa:" />
-      <TextField fx:id="longa" layoutX="354.0" layoutY="167.0" />
-      <Label layoutX="259.0" layoutY="138.0" text="Endereço" />
-      <Label layoutX="52.0" layoutY="206.0" text="número:" />
-      <TextField fx:id="num" layoutX="118.0" layoutY="202.0" prefHeight="24.0" prefWidth="46.0" />
-      <Label layoutX="174.0" layoutY="206.0" text="complemento:" />
-      <TextField fx:id="comple" layoutX="278.0" layoutY="202.0" />
-      <Label layoutX="461.0" layoutY="206.0" text="Bairro:" />
-      <TextField fx:id="bairro" layoutX="505.0" layoutY="202.0" prefHeight="24.0" prefWidth="143.0" />
-      <Label layoutX="34.0" layoutY="243.0" text="cidade:" />
-      <TextField fx:id="city" layoutX="89.0" layoutY="239.0" />
-      <Label layoutX="272.0" layoutY="243.0" text="estado:" />
-      <ComboBox fx:id="esta" layoutX="333.0" layoutY="239.0" onAction="#mostrar" prefHeight="31.0" prefWidth="113.0" promptText="selecione" />
-      <Label layoutX="469.0" layoutY="247.0" text="CEP:" />
-      <TextField fx:id="cep" layoutX="515.0" layoutY="239.0" />
-      <Button layoutX="623.0" layoutY="441.0" mnemonicParsing="false" onAction="#save">
+      <Label layoutX="27.0" layoutY="204.0" text="nome do longa:" />
+      <TextField fx:id="longa" layoutX="137.0" layoutY="200.0" />
+      <Label layoutX="277.0" layoutY="166.0" text="Endereço" />
+      <Label layoutX="62.0" layoutY="240.0" text="número:" />
+      <TextField fx:id="num" layoutX="118.0" layoutY="236.0" prefHeight="24.0" prefWidth="46.0" />
+      <Label layoutX="175.0" layoutY="240.0" text="complemento:" />
+      <TextField fx:id="comple" layoutX="278.0" layoutY="240.0" />
+      <Label layoutX="469.0" layoutY="252.0" text="Bairro:" />
+      <TextField fx:id="bairro" layoutX="515.0" layoutY="248.0" prefHeight="24.0" prefWidth="143.0" />
+      <Label layoutX="17.0" layoutY="292.0" text="cidade:" />
+      <TextField fx:id="city" layoutX="78.0" layoutY="288.0" />
+      <Label layoutX="266.0" layoutY="292.0" text="estado:" />
+      <ComboBox fx:id="esta" layoutX="321.0" layoutY="285.0" onAction="#mostrar" prefHeight="31.0" prefWidth="113.0" promptText="selecione" />
+      <Label layoutX="461.0" layoutY="293.0" text="CEP:" />
+      <TextField fx:id="cep" layoutX="505.0" layoutY="289.0" />
+      <Button layoutX="714.0" layoutY="524.0" mnemonicParsing="false" onAction="#save">
          <graphic>
             <ImageView fitHeight="54.0" fitWidth="54.0" pickOnBounds="true" preserveRatio="true">
                <image>
@@ -58,7 +58,11 @@
             </ImageView>
          </graphic>
       </Button>
-      <Label layoutX="34.0" layoutY="301.0" text="CRM:" />
-      <TextField fx:id="crm" layoutX="79.0" layoutY="297.0" />
+      <Label layoutX="38.0" layoutY="396.0" text="CRM:" />
+      <TextField fx:id="crm" layoutX="89.0" layoutY="392.0" />
+      <Label layoutX="476.0" layoutY="100.0" text="Telefone:" />
+      <TextField fx:id="tel" layoutX="543.0" layoutY="96.0" />
+      <ComboBox fx:id="esp" layoutX="289.0" layoutY="392.0" prefWidth="150.0" promptText="Especialidade" />
+      <ComboBox fx:id="subEsp" layoutX="462.0" layoutY="392.0" prefHeight="24.0" prefWidth="162.0" promptText="Subespecialidade" />
    </children>
 </AnchorPane>
