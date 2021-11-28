@@ -39,7 +39,7 @@
       <ComboBox fx:id="esta" layoutX="364.0" layoutY="422.0" prefHeight="24.0" prefWidth="78.0" />
       <Label layoutX="468.0" layoutY="426.0" text="CEP:" />
       <TextField fx:id="cep" layoutX="515.0" layoutY="422.0" />
-      <Button layoutX="707.0" layoutY="508.0" mnemonicParsing="false" onAction="#salvar">
+      <Button layoutX="707.0" layoutY="508.0" mnemonicParsing="false" onAction="#save">
          <graphic>
             <ImageView fitHeight="54.0" fitWidth="54.0" pickOnBounds="true" preserveRatio="true">
                <image>

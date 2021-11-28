@@ -123,8 +123,5 @@ public class FormMedicosController {
 		
 	}
 	
-	@FXML
-	void mostrar(ActionEvent event) {
-		esta.setPromptText(esta.getValue());
-	}
+	
 }

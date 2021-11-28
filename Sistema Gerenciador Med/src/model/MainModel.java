@@ -5,6 +5,23 @@ import java.util.HashMap;
 public class MainModel {
 	LinkList<Medico> medicos;
 	LinkList<Especialidade> especialidades;
+	public LinkList<Atendente> getAtendentes() {
+		return atendentes;
+	}
+
+	public void setAtendentes(LinkList<Atendente> atendentes) {
+		this.atendentes = atendentes;
+	}
+
+	public HashMap<String, Pessoa> getUsuarios() {
+		return usuarios;
+	}
+
+	public void setUsuarios(HashMap<String, Pessoa> usuarios) {
+		this.usuarios = usuarios;
+	}
+
+	LinkList<Atendente> atendentes;
 	Sessao sessao;
 	Administrador admin;
 	HashMap<String,Pessoa> usuarios;
@@ -29,9 +46,11 @@ public class MainModel {
 		usuarios = new HashMap<String,Pessoa>();
 		medicos = new LinkList<Medico>();
 		especialidades = new LinkList<Especialidade>();
+		atendentes = new LinkList<Atendente>();
 		admin = new Administrador();
 		admin.setSenha("admin");
 		admin.setLogin("admin");
+		
 		
 	}
 	

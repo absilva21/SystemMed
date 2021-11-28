@@ -34,7 +34,7 @@
             </ImageView>
          </graphic>
       </Button>
-      <Button fx:id="addAten" layoutX="259.0" layoutY="25.0" mnemonicParsing="false" prefHeight="70.0" prefWidth="80.0">
+      <Button fx:id="addAten" layoutX="259.0" layoutY="25.0" mnemonicParsing="false" prefHeight="70.0" prefWidth="80.0" onAction="#addAten">
          <graphic>
             <ImageView fitHeight="75.0" fitWidth="73.0" pickOnBounds="true" preserveRatio="true">
                <image>

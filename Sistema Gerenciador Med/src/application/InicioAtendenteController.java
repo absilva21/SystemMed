@@ -48,6 +48,13 @@ public class InicioAtendenteController {
 	}
 	
 	@FXML
+	void addAten(ActionEvent event)throws IOException{
+		BorderPane form = (BorderPane)FXMLLoader.load(getClass().getResource("listaAtenden.fxml"));
+		Scene sceneform = new Scene(form,800,600);
+    	Main.aux.setScene(sceneform);
+	}
+	
+	@FXML
 	void medicos(ActionEvent event)throws IOException{
 		BorderPane form = (BorderPane)FXMLLoader.load(getClass().getResource("listaMedicos.fxml"));
 		Scene sceneform = new Scene(form,800,600);

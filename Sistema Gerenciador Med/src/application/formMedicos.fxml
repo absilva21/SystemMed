@@ -37,7 +37,7 @@
       <Label layoutX="17.0" layoutY="292.0" text="cidade:" />
       <TextField fx:id="city" layoutX="78.0" layoutY="288.0" />
       <Label layoutX="266.0" layoutY="292.0" text="estado:" />
-      <ComboBox fx:id="esta" layoutX="321.0" layoutY="285.0" onAction="#mostrar" prefHeight="31.0" prefWidth="113.0" promptText="selecione" />
+      <ComboBox fx:id="esta" layoutX="321.0" layoutY="285.0" prefHeight="31.0" prefWidth="113.0" promptText="selecione" />
       <Label layoutX="461.0" layoutY="293.0" text="CEP:" />
       <TextField fx:id="cep" layoutX="505.0" layoutY="289.0" />
       <Button layoutX="714.0" layoutY="524.0" mnemonicParsing="false" onAction="#save">
