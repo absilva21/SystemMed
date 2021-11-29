@@ -5,6 +5,14 @@ import java.util.HashMap;
 public class MainModel {
 	LinkList<Medico> medicos;
 	LinkList<Especialidade> especialidades;
+	public LinkList<Prontuario> getProntuarios() {
+		return prontuarios;
+	}
+
+	public void setProntuarios(LinkList<Prontuario> prontuarios) {
+		this.prontuarios = prontuarios;
+	}
+
 	public LinkList<Atendente> getAtendentes() {
 		return atendentes;
 	}
@@ -20,7 +28,8 @@ public class MainModel {
 	public void setUsuarios(HashMap<String, Pessoa> usuarios) {
 		this.usuarios = usuarios;
 	}
-
+	
+	LinkList<Prontuario> prontuarios;
 	LinkList<Atendente> atendentes;
 	Sessao sessao;
 	Administrador admin;
@@ -47,6 +56,7 @@ public class MainModel {
 		medicos = new LinkList<Medico>();
 		especialidades = new LinkList<Especialidade>();
 		atendentes = new LinkList<Atendente>();
+		prontuarios = new LinkList<Prontuario>();
 		admin = new Administrador();
 		admin.setSenha("admin");
 		admin.setLogin("admin");
