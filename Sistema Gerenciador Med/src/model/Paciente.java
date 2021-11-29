@@ -16,4 +16,9 @@ public class Paciente extends Pessoa {
 	public void setProntuario(Prontuario prontuario) {
 		this.prontuario = prontuario;
 	}
+	
+	@Override
+	public String toString() {
+		return super.getName()+" "+super.getSobrenome();
+	}
 }

@@ -9,7 +9,35 @@ public class Prontuario {
 	String hiposteseDiagnostico;
 	String definicaoDiagnostico;
 	String tramento;
+	LinkList<Receita> receitas;
+	LinkList<Consulta> consultas;
 	
+	public Prontuario() {
+		receitas = new LinkList<Receita>();
+		consultas = new LinkList<Consulta>();
+	}
+	
+	
+	public LinkList<Receita> getReceitas() {
+		return receitas;
+	}
+
+
+	public void setReceitas(LinkList<Receita> receitas) {
+		this.receitas = receitas;
+	}
+
+
+	public LinkList<Consulta> getConsultas() {
+		return consultas;
+	}
+
+
+	public void setConsultas(LinkList<Consulta> consultas) {
+		this.consultas = consultas;
+	}
+
+
 	public String getAnamnese() {
 		return anamnese;
 	}
