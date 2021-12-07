@@ -23,7 +23,7 @@ public class FormMedicosController {
 	@FXML
 	ComboBox<Especialidade> esp; 
 	
-	@FXML
+	@FXML                       
 	ComboBox<Especialidade> subEsp;
 	@FXML
 	TextField name;
