@@ -9,6 +9,7 @@ import javafx.scene.Scene;
 import javafx.scene.layout.AnchorPane;
 
 public class FormConsultaController {
+	
 	@FXML
 	void voltar(ActionEvent e) throws IOException {
 		AnchorPane form = (AnchorPane)FXMLLoader.load(getClass().getResource("agenda.fxml"));
@@ -16,6 +17,7 @@ public class FormConsultaController {
 		
     	Main.aux.setScene(sceneform);
 	}
+	
 	
 	@FXML
 	void salvar(ActionEvent e) {

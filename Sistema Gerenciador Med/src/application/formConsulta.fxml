@@ -7,7 +7,7 @@
 <?import javafx.scene.layout.AnchorPane?>
 <?import javafx.scene.text.Font?>
 
-<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="800.0" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.FormConsultaController">
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="800.0" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.FormConsultaController">
    <children>
       <Label layoutX="298.0" layoutY="15.0" text="NOVA CONSULTA">
          <font>
@@ -20,6 +20,5 @@
       <Label layoutX="267.0" layoutY="204.0" text="data:" />
       <Button layoutX="668.0" layoutY="523.0" mnemonicParsing="false" onAction="#salvar" text="salvar" />
       <Button layoutX="38.0" layoutY="21.0" mnemonicParsing="false" onAction="#voltar" text="voltar" />
-      <AnchorPane prefHeight="200.0" prefWidth="200.0" />
    </children>
 </AnchorPane>
