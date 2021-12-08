@@ -7,6 +7,8 @@ import javafx.fxml.FXML;
 import javafx.fxml.FXMLLoader;
 import javafx.scene.Scene;
 import javafx.scene.control.ListView;
+import javafx.scene.input.MouseEvent;
+import javafx.scene.layout.AnchorPane;
 import javafx.scene.layout.VBox;
 import model.Dia;
 import model.LinkList;
@@ -15,7 +17,7 @@ import model.Paciente;
 
 public class AgendaMedController {
 	LocalDate hoje;
-	
+	static Paciente paci;
 	@FXML
 	ListView<Paciente> list;
 	
@@ -40,6 +42,21 @@ public class AgendaMedController {
 			}
 			
 			
+		}
+	}
+	
+	@FXML
+	void select(MouseEvent e) throws IOException {
+		int index = list.getSelectionModel().getSelectedIndex();
+		if(list.getItems().size()>0) {
+			paci = list.getItems().get(index);
+		}
+		
+		if(e.getClickCount() == 2) {
+			AnchorPane form = (AnchorPane)FXMLLoader.load(getClass().getResource("prontuarioView.fxml"));
+			Scene sceneform = new Scene(form,800,600);
+			         
+	    	Main.aux.setScene(sceneform);
 		}
 	}
 	

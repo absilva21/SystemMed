@@ -9,7 +9,7 @@
 
 <AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="800.0" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.AgendaMedController">
    <children>
-      <ListView fx:id="list" layoutX="44.0" layoutY="98.0" prefHeight="476.0" prefWidth="725.0" />
+      <ListView fx:id="list" layoutX="44.0" layoutY="98.0" onMouseClicked="#select" prefHeight="476.0" prefWidth="725.0" />
       <Label layoutX="338.0" layoutY="14.0" prefHeight="16.0" prefWidth="118.0" text="Pacientes do dia" />
       <Button layoutX="684.0" layoutY="14.0" mnemonicParsing="false" onAction="#exit" prefHeight="69.0" prefWidth="78.0">
          <graphic>

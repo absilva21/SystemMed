@@ -28,9 +28,7 @@ public class ListaMedicoController {
 	@FXML
 	void select(MouseEvent click) throws IOException {
 		int index = lista.getSelectionModel().getSelectedIndex();
-		System.out.println(lista.getSelectionModel().getSelectedIndex());
-		System.out.println(lista.getItems().size());
-		
+	
 		if(lista.getItems().size()>0) {
 			s = lista.getItems().get(index);
 		}

@@ -8,11 +8,11 @@
 <?import javafx.scene.layout.Region?>
 
 
-<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="800.0" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1">
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="800.0" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.ProntuarioViewController">
    <children>
       <Label layoutX="128.0" layoutY="20.0" prefHeight="29.0" prefWidth="52.0" text="Nome:" />
       <Label layoutX="128.0" layoutY="56.0" text="idade:" />
-      <SubScene height="313.0" layoutX="63.0" layoutY="99.0" width="674.0">
+      <SubScene fx:id="sub" height="313.0" layoutX="63.0" layoutY="99.0" width="674.0">
         <root>
           <Region />
         </root>
