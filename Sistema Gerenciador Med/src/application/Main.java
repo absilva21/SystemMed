@@ -16,6 +16,7 @@ public class Main extends Application {
 	static MainModel main;
 	static Pessoa refPessoa;
 	
+	
 	@Override
 	public void start(Stage primaryStage) {
 	

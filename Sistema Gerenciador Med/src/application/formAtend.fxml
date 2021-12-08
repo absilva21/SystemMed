@@ -52,7 +52,7 @@
          <graphic>
             <ImageView fitHeight="30.0" fitWidth="33.0" pickOnBounds="true" preserveRatio="true">
                <image>
-                  <Image url="@../icons/back_arrow_5821.png" />
+                  <Image url="@../../icons/back_arrow_5821.png" />
                </image>
             </ImageView>
          </graphic>

@@ -25,7 +25,7 @@
                <children>
                   <Button layoutX="436.0" layoutY="1.0" mnemonicParsing="false" onAction="#cadastro">
                      <graphic>
-                        <ImageView  fitHeight="50.0" fitWidth="49.0" pickOnBounds="true" preserveRatio="true">
+                        <ImageView fitHeight="50.0" fitWidth="49.0" pickOnBounds="true" preserveRatio="true">
                            <image>
                               <Image url="@../../icons/addfileinterfacesymbolofpapersheetwithtextlinesandplussign_79821.png" />
                            </image>
@@ -40,7 +40,7 @@
    <center>
       <HBox prefHeight="100.0" prefWidth="200.0" BorderPane.alignment="CENTER">
          <children>
-            <ListView fx:id="lista" editable="true" prefHeight="299.0" prefWidth="585.0" />
+            <ListView fx:id="lista" editable="true" onMouseClicked="#select" prefHeight="299.0" prefWidth="585.0" />
             <ScrollBar orientation="VERTICAL" />
          </children>
       </HBox>

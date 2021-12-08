@@ -16,7 +16,7 @@
                <graphic>
                   <ImageView fitHeight="49.0" fitWidth="74.0" pickOnBounds="true" preserveRatio="true">
                      <image>
-                        <Image url="@../git/SystemMed/Sistema%20Gerenciador%20Med/icons/back_arrow_5821.png" />
+                        <Image url="@../../icons/back_arrow_5821.png" />
                      </image>
                   </ImageView>
                </graphic></Button>
@@ -25,7 +25,7 @@
                <graphic>
                   <ImageView fitHeight="50.0" fitWidth="49.0" pickOnBounds="true" preserveRatio="true">
                      <image>
-                        <Image url="@../git/SystemMed/Sistema%20Gerenciador%20Med/icons/addfileinterfacesymbolofpapersheetwithtextlinesandplussign_79821.png" />
+                        <Image url="@../../icons/addfileinterfacesymbolofpapersheetwithtextlinesandplussign_79821.png" />
                      </image>
                   </ImageView>
                </graphic>

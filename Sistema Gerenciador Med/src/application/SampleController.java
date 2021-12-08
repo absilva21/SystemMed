@@ -13,7 +13,6 @@ import javafx.scene.control.PasswordField;
 import javafx.scene.control.TextField;
 import javafx.scene.layout.AnchorPane;
 import javafx.scene.layout.BorderPane;
-import javafx.scene.layout.VBox;
 
 public class SampleController {
 	
@@ -44,8 +43,8 @@ public class SampleController {
 			int n = Main.main.getSessao().getTypeUser();
 			switch(n) {
 			case 0:
-				System.out.println("entrou");
-				BorderPane med = (BorderPane)FXMLLoader.load(getClass().getResource("listaProntuarios.fxml"));
+				
+				AnchorPane med = (AnchorPane)FXMLLoader.load(getClass().getResource("agendaMed.fxml"));
 				Scene scenemed = new Scene(med,800,600);
 		    	Main.aux.setScene(scenemed);
 		    	break;
