@@ -4,9 +4,10 @@
 <?import javafx.scene.control.Button?>
 <?import javafx.scene.control.Label?>
 <?import javafx.scene.control.Separator?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
 <?import javafx.scene.layout.AnchorPane?>
 <?import javafx.scene.layout.Region?>
-
 
 <AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="800.0" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.ProntuarioViewController">
    <children>
@@ -21,15 +22,23 @@
       <Separator layoutX="58.0" layoutY="402.0" prefHeight="3.0" prefWidth="685.0" />
       <Separator layoutX="63.0" layoutY="86.0" prefHeight="3.0" prefWidth="674.0" />
       <Separator layoutX="740.0" layoutY="87.0" orientation="VERTICAL" prefHeight="313.0" prefWidth="6.0" />
-      <Label layoutX="180.0" layoutY="27.0" prefHeight="16.0" prefWidth="265.0" text="Label" />
-      <Label layoutX="180.0" layoutY="56.0" prefHeight="16.0" prefWidth="41.0" text="Label" />
-      <Button layoutX="63.0" layoutY="452.0" mnemonicParsing="false" text="Button" />
-      <Button layoutX="149.0" layoutY="452.0" mnemonicParsing="false" text="Button" />
-      <Button layoutX="243.0" layoutY="452.0" mnemonicParsing="false" text="Button" />
-      <Button layoutX="331.0" layoutY="452.0" mnemonicParsing="false" text="Button" />
-      <Button layoutX="434.0" layoutY="452.0" mnemonicParsing="false" text="Button" />
-      <Button layoutX="528.0" layoutY="452.0" mnemonicParsing="false" text="Button" />
-      <Button layoutX="630.0" layoutY="452.0" mnemonicParsing="false" text="Button" />
-      <Button layoutX="63.0" layoutY="506.0" mnemonicParsing="false" text="Button" />
+      <Label fx:id="name" layoutX="180.0" layoutY="27.0" prefHeight="16.0" prefWidth="265.0" text="Label" />
+      <Label fx:id="idade" layoutX="180.0" layoutY="56.0" prefHeight="16.0" prefWidth="41.0" text="Label" />
+      <Button layoutX="31.0" layoutY="452.0" mnemonicParsing="false" text="anamnese" />
+      <Button layoutX="130.0" layoutY="452.0" mnemonicParsing="false" text="exame fisico" />
+      <Button layoutX="243.0" layoutY="452.0" mnemonicParsing="false" text="hipotese" />
+      <Button layoutX="331.0" layoutY="452.0" mnemonicParsing="false" text="diagnostico" />
+      <Button layoutX="434.0" layoutY="452.0" mnemonicParsing="false" text="tratamento" />
+      <Button layoutX="542.0" layoutY="452.0" mnemonicParsing="false" text="receitas" />
+      <Button layoutX="11.0" layoutY="10.0" mnemonicParsing="false" prefHeight="60.0" prefWidth="70.0">
+         <graphic>
+            <ImageView fitHeight="51.0" fitWidth="59.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../icons/back_arrow_5821.png" />
+               </image>
+            </ImageView>
+         </graphic>
+      </Button>
+      <Button layoutX="706.0" layoutY="542.0" mnemonicParsing="false" text="finalizar" />
    </children>
 </AnchorPane>
