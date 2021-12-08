@@ -105,11 +105,13 @@ public class MainModel {
 				auth = senha.equals(x.getSenha());
 				this.sessao.setName(user.name);
 				this.sessao.setTypeUser(Sessao.MEDICO);
+				this.sessao.setUser(user);
 			}else if(user instanceof Atendente) {
 				Atendente x = (Atendente) user;
 				auth = senha.equals(x.getSenha());
 				this.sessao.setName(user.name);
 				this.sessao.setTypeUser(Sessao.ATENDENTE);
+				this.sessao.setUser(user);
 			}else {
 				//autenticação do Paciente no auto Atendimento
 			}
