@@ -16,6 +16,7 @@ public class Medico extends Pessoa{
 	}
 	public Medico() {
 		super();
+		agenda = new Agenda();
 		senha = null;
 	}
 	@Override

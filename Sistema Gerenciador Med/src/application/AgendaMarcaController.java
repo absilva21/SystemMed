@@ -2,6 +2,7 @@ package application;
 
 import java.time.LocalDate;
 
+import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
 import javafx.scene.control.ComboBox;
 import javafx.scene.control.Label;
@@ -25,6 +26,11 @@ public class AgendaMarcaController {
 	private void initialize() {
 		x = ListaMedicoController.getS();
 		dr.setText(x.toString());
+	}
+	
+	@FXML
+	void add(ActionEvent e) {
+		
 	}
 	
 }
