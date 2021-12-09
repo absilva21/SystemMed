@@ -5,9 +5,9 @@
 <?import javafx.scene.layout.AnchorPane?>
 
 
-<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="313.0" prefWidth="674.0" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1">
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="313.0" prefWidth="674.0" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.AreaTextController">
    <children>
-      <TextArea layoutX="189.0" layoutY="18.0" prefHeight="258.0" prefWidth="289.0" />
+      <TextArea fx:id="text" layoutX="189.0" layoutY="18.0" prefHeight="258.0" prefWidth="289.0" />
       <Button layoutX="565.0" layoutY="264.0" mnemonicParsing="false" text="save" />
    </children>
 </AnchorPane>

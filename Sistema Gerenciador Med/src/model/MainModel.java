@@ -113,7 +113,9 @@ public class MainModel {
 				this.sessao.setTypeUser(Sessao.ATENDENTE);
 				this.sessao.setUser(user);
 			}else {
-				//autenticação do Paciente no auto Atendimento
+				Paciente x = (Paciente) user;
+				auth = senha.equals(x.nascimento.toString());
+			
 			}
 		}else {
 			auth = false;

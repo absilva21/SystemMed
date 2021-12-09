@@ -12,6 +12,9 @@ import javafx.scene.control.Label;
 import javafx.scene.layout.AnchorPane;
 
 public class ProntuarioViewController {
+	
+	static String text;
+	
 	@FXML
 	SubScene sub;
 	
@@ -20,6 +23,7 @@ public class ProntuarioViewController {
 	
 	@FXML
 	Label name;
+
 	
 	@FXML
 	void volta(ActionEvent e) throws IOException {
@@ -31,10 +35,15 @@ public class ProntuarioViewController {
 	
 	@FXML
 	private void initialize() throws IOException {
+		text = "teste";
 		AnchorPane form = (AnchorPane)FXMLLoader.load(getClass().getResource("areaText.fxml"));
 		sub.setRoot(form);
 		name.setText(AgendaMedController.paci.toString());
 		Integer id = LocalDate.now().getYear()-AgendaMedController.paci.getNascimento().getYear();
 		idade.setText(id.toString());
 	}
+	
+	
+	
+	
 }
